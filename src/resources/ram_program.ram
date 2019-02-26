@@ -1,0 +1,33 @@
+# Programa que calcula el logaritmo en base 2 de un numero dado
+# Cuantas veces hay que dividir por 2 para llegar a 1 ?
+
+	READ 1		# Carga numero en 1
+	LOAD 1
+	SUB =1
+	JGTZ not1
+	
+	WRITE =0	#IF numero es 1, el logaritmo en base 2 es 0
+	HALT
+	
+not1:
+	LOAD =0
+	STORE 2		# y en 2 guardo el contador de divisiones
+	LOAD 1
+
+loop:
+	JZERO fin
+	LOAD 1
+	DIV =2		# Dividir entre 2
+	STORE 1
+
+	LOAD 2		# Aumentar contador
+	ADD =1		
+	STORE 2
+
+	LOAD 1		# Cargar el numero actual 
+	SUB =1		# Restar para luego comprobar si es 1
+	JUMP loop
+
+fin:
+	WRITE 2
+	HALT
