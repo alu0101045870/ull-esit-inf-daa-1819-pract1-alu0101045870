@@ -15,3 +15,12 @@ This directory is organised as follows:
       ├── report       # LaTeX template for the report
       ├── slides       # LaTeX Beamer template for the slides
       ├── src          # Source code
+      
+-------------------------------------------------------------------------------
+
+### Project description
+
+This is a practical assignment for the 'Algorithm Design and Analysis' course from my 3rd year at the University of La Laguna (2018-2019).
+
+- It attempts to simulate a simple CPU unit and is able to process a fixed set of instructions written in a simplified assembly format.
+- Code is written entirely on C++.
